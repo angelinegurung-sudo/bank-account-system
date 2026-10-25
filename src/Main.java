@@ -7,7 +7,7 @@
             System.out.println("Your Balance: " + myAccount.getBalance() );
 
             myAccount.deposit(-50);
-            myAccount.withdraw(1000.90);
+            myAccount.withdraw(0);
 
         }
 }

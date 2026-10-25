@@ -22,6 +22,8 @@ public class Account {
 
         if ( amount > balance ) {
             System.out.println("you do not have sufficient funds in your account");
+        } else if ( amount <= 0 ) {
+            System.out.println("Please withdraw a valid amount");
         } else {
             this.balance -= amount;
         }
