@@ -18,14 +18,17 @@ public class Account {
         }
     }
 
-    public void withdraw(double amount) {
+    public boolean withdraw(double amount) {
 
         if ( amount > balance ) {
             System.out.println("you do not have sufficient funds in your account");
+            return false;
         } else if ( amount <= 0 ) {
             System.out.println("Please withdraw a valid amount");
+            return false;
         } else {
             this.balance -= amount;
+            return true;
         }
     }
 
