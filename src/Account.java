@@ -11,8 +11,11 @@ public class Account {
     }
 
     public void deposit(double amount) {
-
-        this.balance += amount;
+        if ( amount <= 0 ) {
+            System.out.println("Amount must be at least £0.01");
+        } else {
+            this.balance += amount;
+        }
     }
 
     public void withdraw(double amount) {
