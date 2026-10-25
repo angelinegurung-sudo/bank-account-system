@@ -2,7 +2,7 @@ public class Account {
 
     private double balance;
     private String accountHolder;
-    private int accountNumber;
+    private final int accountNumber;
 
     public Account(double balance, String accountHolder, int accountNumber) {
         this.balance = balance;
@@ -35,6 +35,16 @@ public class Account {
     public double getBalance() {
 
         return balance;
+    }
+
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+
+    public int getAccountNumber() {
+
+        return accountNumber;
+
     }
 
 }

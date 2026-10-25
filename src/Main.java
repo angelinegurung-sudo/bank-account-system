@@ -6,10 +6,11 @@
 
             System.out.println("Your Balance: " + myAccount.getBalance() );
 
-            myAccount.deposit(-50);
-            myAccount.withdraw(0);
-            boolean withdrawlSuccessful = myAccount.withdraw(1000);
-            System.out.println("Withdrawl Successful? " + withdrawlSuccessful);
+            myAccount.deposit(1);
+            myAccount.withdraw(30);
+            boolean withdrawSuccessful = myAccount.withdraw(30);
+            System.out.println("Withdraw Successful? " + withdrawSuccessful);
+            System.out.println("Holder: " + myAccount.getAccountHolder());
 
         }
 }
